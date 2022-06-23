@@ -26,6 +26,14 @@ class MyApp extends StatelessWidget {
       initialData: null,
       value: Authservice().user,
       child: MaterialApp(
+        theme: ThemeData(
+          // Define the default colors.
+          primaryColor: Colors.brown[400],
+          backgroundColor: Colors.brown[50],
+          appBarTheme: AppBarTheme(
+            color: Colors.brown[400],
+          ),
+        ),
         home: Wrapper(),
       ),
     );
